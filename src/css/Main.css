@@ -1,0 +1,52 @@
+html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body, #root, .App {
+    height: 100%;
+    width: 100%;
+}
+
+.borderless-focus:focus {
+    outline: none;
+}
+
+/*html {
+    border: solid red 8px;
+}
+body {
+    border: solid yellow 5px;
+}
+.App {
+    border: solid green 5px;
+}*/
+
+@media only screen and (orientation:portrait) {
+    .landscape {
+        transform: rotate(90deg);
+        transform-origin: left top;
+        height: 100vw;
+        width: 100vh;
+        overflow-x: hidden;
+        position: absolute;
+        left: 100%;
+        /*outline: solid purple 50px;*/
+    }
+
+    /*.landscape {
+        transform: rotate(90deg);
+        transform-origin: left top;
+        width: 100vh;
+        /*height: 100vw;*/
+        /*top: 100%;
+        left: 0;
+        outline: solid purple 1px;
+    }*/
+    .landscape .right {
+        transform: rotate(-90deg);
+        top: 100%;
+        left: 0;
+    }
+}
